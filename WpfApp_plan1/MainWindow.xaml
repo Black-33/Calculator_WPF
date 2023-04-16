@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp_plan1"
-        mc:Ignorable="d"
+        mc:Ignorable="d"       
         Title="Калькулятор" Height="400" Width="260" 
          WindowStyle="ThreeDBorderWindow" ResizeMode="NoResize" Background="#FF424242"  Icon="/Calc.png" Topmost="True">
     <Grid x:Name="MainRoot" Background = "#FF202020" Height="354">
@@ -23,7 +23,7 @@
             <ColumnDefinition Width="60"/>
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
-        <TextBlock Background="White" Text="" x:Name="textLabel" FontSize="36" HorizontalAlignment="Center" Width="240" Grid.ColumnSpan="4" Margin="0,0,0,0"/>
+        <TextBox Background="White" Text=""  x:Name="textBox" FontSize="36" HorizontalAlignment="Center" Width="240" Grid.ColumnSpan="4" Margin="0,0,0,0"/>
         <Button Content="7" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="60" Height="60" FontSize="36" Background="#FFDDDDDD"/>
         <Button Content="8" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="60" Height="60" FontSize="36" Grid.Column="1"/>
         <Button Content="9" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" Width="60" Height="60" FontSize="36"/>
@@ -39,10 +39,10 @@
         <Button Content="+" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Top" Grid.Column="3" Width="60" Height="60" FontSize="36" Background="#FFFA8C11" Margin="0,57,0,0" Grid.RowSpan="2"/>
         <Button Content="-" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Grid.Column="3" Width="60" Height="60" FontSize="36" Background="#FFFA8C11"/>
         <Button Content="/" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Grid.Column="3" Width="60" Height="60" FontSize="36" Background="#FFF78B0F"/>
-        <Button Content="C" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="60" Height="60" Background="#FFC5C6C8" FontSize="36"/>
+        <Button Content="Del" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="60" Height="60" Background="#FFC5C6C8" FontSize="36"/>
         <Button Content="%" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Grid.Column="2" Width="60" Height="60" FontSize="36" Background="#FFCCCDD1"/>
         <Button Content="." Grid.Row="5" Grid.Column="2" Width="60" Height="60" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <Image Grid.Column="1" HorizontalAlignment="Center" Height="60" VerticalAlignment="Center" Width="60" Source="/Calc.png" Grid.Row="1"/>
+        <Button Content="BS" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="60" Height="60" Background="#FFC5C6C8" FontSize="36"/>
         <Border BorderBrush="Black" BorderThickness="1" Grid.Row="4"/>
 
 
